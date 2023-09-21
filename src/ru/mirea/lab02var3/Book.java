@@ -11,7 +11,7 @@ public class Book {
             this.name = name;
             this.surname = surname;
         }
-        public void set (String name, String surname) {
+        public void setAuthor (String name, String surname) {
             this.name = name;
             this.surname = surname;
         }
@@ -21,6 +21,7 @@ public class Book {
         public String getSurname () {
             return surname;
         }
+        public String getAuthor () { return name + " " + surname; }
     }
     class Name {
         private String bookname;
@@ -28,10 +29,10 @@ public class Book {
         public Name (String bookname) {
             this.bookname = bookname;
         }
-        public void set (String bookname) {
+        public void setBookname (String bookname) {
             this.bookname = bookname;
         }
-        public String getName () {
+        public String getBookname () {
             return bookname;
         }
     }
@@ -51,7 +52,7 @@ public class Book {
     Authtor authtor = new Authtor();
     Name name = new Name();
     Year year = new Year();
-    public Book () {};
+    public Book () {}
     public Book (Name name, Authtor authtor, Year year) {
         this.name = name;
         this.authtor = authtor;
