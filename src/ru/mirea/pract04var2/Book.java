@@ -1,4 +1,4 @@
-package ru.mirea.lab02var3;
+package ru.mirea.pract04var2;
 
 import java.lang.*;
 
@@ -57,5 +57,14 @@ public class Book {
         this.name = name;
         this.authtor = authtor;
         this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "authtor=" + authtor.getAuthor() +
+                ", name=" + name.getBookname() +
+                ", year=" + year.getYear() +
+                '}';
     }
 }

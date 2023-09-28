@@ -1,4 +1,4 @@
-package ru.mirea.lab02var3;
+package ru.mirea.pract04var2;
 
 public class TestBook {
     public static void main(String[] args) {
@@ -16,5 +16,7 @@ public class TestBook {
         System.out.println(book2.authtor.getAuthor());
         System.out.println(book2.name.getBookname());
         System.out.println(book2.year.getYear());
+        System.out.println(book1);
+        System.out.println(book2);
     }
 }
